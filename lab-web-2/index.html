@@ -7,7 +7,14 @@
     <title>Біографії</title>
 </head>
 <header>
-    <div></div>
+    <div>
+        <a href="#main-information">Загальна інформація</a>
+        <a href="#biography">Біографії</a>
+        <a href="#photos">Фотографії</a>
+        <a href="#schedule">Розклад</a>
+        <a href="#forms">Форми реєстрації</a>
+        <a href="#audio-photo">Аудіо</a>
+    </div>
 
 </header>
 
@@ -56,6 +63,7 @@
     </section>
 
     <section id="photos">
+        <h1>Фотографії</h1>
         <div id="vadaim">
             <p>Соболь Вадим</p>
             <img src="https://iq.vntu.edu.ua/b04213/html/getfile.php?stud_id=34376">
@@ -64,6 +72,7 @@
     </section>
 
     <section id="schedule">
+        <h1>Розклад</h1>
         <style>
             table,
             th,
@@ -336,30 +345,31 @@
     </section>
 
     <section id="forms">
+        <h1>Форми реєстрації</h1>
         <form>
             <label for="fname">Введіть ваше ім'я</label><br>
             <input type="text" id="fname" name="fname" required><br>
             <label for="sname">Введіть ваше прізвище</label><br>
             <input type="text" id="sname" name="sname" required><br>
-            
+
             <label for="phone">Введіть ваш тел.</label><br>
-            <input type="tel" id="phone" name="phone" 
-            placeholder="012-345-6780" 
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
-            
+            <input type="tel" id="phone" name="phone" placeholder="012-345-6780"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
             <label for="group">Група</label><br>
-            <input type="checkbox" name="1" required> 
+            <input type="checkbox" name="1" required>
             <label for="1">1-АКІТР-26б</label><br>
             <input type="checkbox" name="2" required>
             <label for="2">2-АКІТР-26б</label><br>
             <input type="checkbox" name="3" required>
             <label for="3">3-АКІТР-26б</label><br>
-            
+
             <input type="submit" value="Submit">
         </form>
     </section>
 
     <section id="audio-photo">
+        <h1>Аудіо</h1>
         <audio src="bass.wav" controls></audio>
         <!--Створи секцію з аудіо і фото-->
     </section>
