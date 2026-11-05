@@ -1,0 +1,245 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.04em;
+}
+
+body,
+#features-section,
+#programs-section,
+#feature,
+#program,
+#block,
+#form,
+#footer,
+#link-container,
+#education-logo,
+#contacts-container,
+#features-container,
+#info,
+#programs-container {
+    display: flex;
+}
+
+#icons {
+    filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(100deg);
+}
+
+body {
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+#features-section,
+#programs-section {
+    flex-direction: column;
+    align-items: center;
+}
+
+#features-container,
+#programs-container {
+    flex-wrap: wrap;
+}
+
+#programs-container {
+    width: 85%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#feature,
+#program {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 calc(33.333% - 14px);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#feature {
+    min-width: 475px;
+    margin-bottom: 40px;
+}
+
+#feature-text {
+    width: 75%;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Calibri, "Segoe UI", Arial, sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+    font-size: 32pt;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 20pt;
+}
+
+p {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+#feature-text {
+    font-size: 14pt;
+
+}
+
+#block {
+    flex-direction: column;
+    align-items: center;
+
+
+    width: 475px;
+    height: 475px;
+    background-size: cover;
+    background-position: center;
+}
+
+#block-text {
+    margin: 20px;
+    transform: translate(0px, 125px);
+    color: white;
+}
+
+#contacts-container {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#form {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 40%;
+    gap: 20px;
+    margin: 20px;
+    width: 600px;
+}
+
+#form input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #858585;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+}
+
+
+
+#form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    outline: none;
+    resize: none;
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+
+#form input::placeholder,
+#form textarea::placeholder {
+    color: #555555;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+}
+
+
+#send-btn {
+    align-self: flex-start;
+    padding: 15px 52px;
+    background-color: #24b463;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.2s ease;
+}
+
+#send-btn:hover {
+    background-color: #1e9d56;
+}
+
+
+#info {
+    flex-direction: row;
+}
+
+#info-special {
+    margin: 20px;
+    width: 33%;
+}
+
+#footer {
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-color: #222222;
+    box-sizing: border-box;
+}
+
+#link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#link {
+    margin: 15px;
+}
+
+#education-logo {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (width <=475px) {
+    #feature {
+        display: flex;
+        width: auto;
+    }
+
+    #block {
+        width: 90vw;
+        height: 90vw;
+    }
+
+}
+
+@media (width <=900px) {
+
+    #link-container,
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #link {
+        width: 100%;
+        border-bottom: 1px solid #3d3d3d;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab-3</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <script src="script.js" defer></script>
+    <section id="features-section">
+        <h1>Features</h1>
+        <div id="features-container">
+
+        </div>
+    </section>
+
+    <section id="programs-section">
+        <h1>Programs</h1>
+        <div id="programs-container">
+
+        </div>
+
+    </section>
+
+    <section id="contacts-section">
+        <h1>Contacts</h1>
+        <div id="contacts-container">
+            <form id="form">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="E mail">
+                <textarea name="message" placeholder="Message" rows="17"></textarea>
+                <input id="send-btn" type="button" value="Send">
+            </form>
+            <div id="maps-container">
+                <div id="googleMap" style="width:90%; height:400px; margin: 20px"></div>
+                <div id="info">
+                    <div id="info-special">
+                        <img style="width: 50px; height: 50px;" src="pictures/location.png">
+                        <p>LSE Houghton Street London WC2A 2EA UK.</p>
+                    </div>
+                    <div id="info-special">
+                        <img style="width: 50px; height: 50px;" src="pictures/mail.png">
+                        <p>sobolv2301@gmail.com</p>
+                    </div>
+                    <div id="info-special" >
+                        <img style="width: 50px; height: 50px;" src="pictures/telephone.png">
+                        <p>+38(099) 781 3417 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            function myMap() {
+                var mapProp = {
+                    center: new google.maps.LatLng(51.508742, -0.120850),
+                    zoom: 5,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            }
+        </script>
+
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDETRaIvwVmV1lXQpC8A-HKI71W44Vmnek&callback=myMap"></script>
+    </section>
+
+
+</body>
+<footer id="footer">
+    <div id="education-logo">
+        <img style="height: 70px; width: 70px; filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(100deg);" src="pictures/book.png" alt="logo">
+        <h2 style="margin-left: 10px;">EDUCATION</h2>
+    </div>
+    <div id="link-container">
+        <a id="link">Home</a>
+        <a id="link">About</a>
+        <a id="link">Courses</a>
+        <a id="link">Teachers</a>
+        <a id="link">Programs</a>
+        <a id="link">Contacts</a>
+    </div>
+</footer>
+
+</html>
